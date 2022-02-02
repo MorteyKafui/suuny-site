@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700;900&family=Fraunces:wght@700;900&display=swap');
+
+:root {
+  --soft-red-color: hsl(7, 99%, 70%);
+  --yellow-color: hsl(51, 100%, 49%);
+  --cyan-color: hsl(167, 40%, 24%);
+  --dark-blue: hsl(198, 62%, 26%);
+  --dark-moderate-cyan: hsl(168, 34%, 41%);
+  --dark-blue-color-2: hsl(212, 27%, 19%);
+  --dark-grayish-blue-color: hsl(213, 9%, 39%);
+  --dark-grayish-blue-2: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --white-color: hsl(0, 0%, 100%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+/* font-family: 'Barlow', sans-serif;
+font-family: 'Fraunces', serif; */
+
+body {
+  font-family: 'Fraunces', serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+.header {
+  background: url(/images/desktop/image-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  background-position: center;
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+}
+
+.header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav ul li a {
+  padding: 1.8rem 3rem;
+}
+
+.header .btn {
+  background-color: var(--white-color);
+  color: var(--dark-blue-color-2);
+  border-radius: 50px;
+}
+
+.header .showcase {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 30vh;
+  margin-top: 3rem;
+  color: var(--white-color);
+}
+
+.header .showcase h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  line-height: 1.5;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+}
+
+.about .box {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.about .box-1,
+.about .box-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  padding: 0 4rem;
+  gap: 3rem;
+  line-height: 1.5;
+  margin-left: 3rem;
+  color: var(--dark-blue-color-2);
+}
+
+.about .box-1 h2,
+.about .box-2 h2 {
+  font-size: 3rem;
+}
+
+.about .box-1 a,
+.about .box-2 a {
+  color: var(--dark-blue-color-2);
+  text-transform: uppercase;
+}
+
+.about .box-1 a {
+  border-bottom: 4px solid var(--yellow-color);
+}
+
+.about .box-2 a {
+  border-bottom: 4px solid var(--soft-red-color);
+}
+
+.about .box-img {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.about .box-img .text {
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50%;
+}
+
+.about .text-box-1 {
+  color: var(--cyan-color);
+}
+
+.about .text-box-2 {
+  color: var(--dark-blue);
+}
+
+.about .box-img img {
+  width: 100%;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 8rem;
+}
+
+.testimonials {
+  margin: 5rem;
+}
+
+.testimonials .title {
+  text-align: center;
+  color: var(--grayish-blue);
+  margin: 5rem;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+.testimonials .boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  text-align: center;
+}
+
+.boxes .box img {
+  border-radius: 50%;
+  margin-bottom: 3rem;
+}
+
+.boxes .box .text-1 {
+  margin: 3rem;
+  color: var(--dark-grayish-blue-color);
+  width: 100%;
+}
+
+.boxes .box h3 {
+  margin: 3rem;
+  color: var(--dark-blue-color-2);
+}
+
+.boxes .box h5 {
+  color: var(--grayish-blue);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery img {
+  width: 48rem;
+}
+
+.footer {
+  background-color: var(--dark-moderate-cyan);
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  gap: 3rem;
+}
+
+.footer p,
+.footer a,
+.footer span i {
+  color: var(--cyan-color);
+}
+
+.footer nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer span i {
+  cursor: pointer;
+  margin: 1rem;
+}
